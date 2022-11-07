@@ -1,38 +1,332 @@
-.App {
-  text-align: center;
+:root{
+  --left:17vw;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #DCE8D9;
+}
+.navbar {
+
+  background-color: #ECF0EC;
+  height: 60px;
+  margin: 0;
+  position: relative;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo {
+  height: 50px;
+
+  position: absolute;
+  left: 2%;
+  top: 2%;
+
+}
+
+.navHome {
+  position: absolute;
+  height: 20;
+  left: 12vw;
+}
+
+.navEvents {
+  position: absolute;
+  height: 20;
+  left: 20vw;
+  
+}
+
+.navNews {
+  position: absolute;
+  height: 20;
+  left: 30vw;
+}
+
+.navMember {
+  position: absolute;
+  height: 20;
+  left: 65vw
+}
+
+.navSearch {
+  position: absolute;
+  height: 20;
+  left: 90vw;
+}
+.searchIcon{
+  position:absolute;
+  height: 20;
+  left: 95vw;
+}
+.navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch):hover{
+  color: grey;
+  
+}
+
+@media (max-width:1229px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 15px;
+  
+  }
+  .logo{
+    height: 47px;
+  }
+  
+}
+@media (max-width:1000px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 13px;
+
+  
+  }
+  .logo{
+    height: 40px;
+  }
+  .navHome {
+    position: absolute;
+    height: 20;
+    left: 10vw;
+  }
+  
+  .navEvents {
+    position: absolute;
+    
+    left: 15;
+    
+  }
+  
+  .navNews {
+    position: absolute;
+   
+    left: 25vw;
+  }
+  
+  .navMember {
+    position: absolute;
+    
+    left: 65vw
+  }
+  
+  .navSearch {
+    position: absolute;
+    height: 20;
+    left: 90vw;
+  }
+  .searchIcon{
+    position:absolute;
+    height: 20;
+    left: 95vw;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:800px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 12px;
+    
+  
   }
-  to {
-    transform: rotate(360deg);
+  .logo{ position:absolute;
+    height:30px ;
+  }
+  .navHome {
+    position: absolute;
+    
+    left: 20vw;
+  }
+  
+  .navEvents {
+    position: absolute;
+    
+    left: 28vw;
+    
+  }
+  
+  .navNews {
+    position: absolute;
+    
+    left: 38vw;
+  }
+  
+  .navMember {
+    position: absolute;
+    
+    left: 65vw
+  }
+  
+  .navSearch {
+    position: absolute;
+    
+    left: 88vw;
+  }
+  .searchIcon{
+    position:absolute;
+    
+    left: 98vw;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+
+  }
+}
+@media (max-width:900px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 12px;
+    
+  
+  }
+  .logo{
+    height: 35px;
+    top: 20%;
+  }
+  .navHome {
+    position: absolute;
+    
+    left: 15vw;
+  }
+  
+  .navEvents {
+    position: absolute;
+    
+    left: 25vw;
+    
+  }
+  
+  .navNews {
+    position: absolute;
+    
+    left: 35vw;
+  }
+  
+  .navMember {
+    position: absolute;
+    
+    left: 68vw
+  }
+  
+  .navSearch {
+    position: absolute;
+    
+    left: 90vw;
+  }
+  .searchIcon{
+    position:absolute;
+    
+    left: 96vw;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+
+  }
+}
+@media (max-width:700px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 12px;
+    
+  
+  }
+  .logo{ position:absolute;
+    height:28px ;
+  }
+  .navHome {
+    position: absolute;
+    
+    left: 15vw;
+  }
+  
+  .navEvents {
+    position: absolute;
+    
+    left: 25vw;
+    
+  }
+  
+  .navNews {
+    position: absolute;
+    
+    left: 35vw;
+  }
+  
+  .navMember {
+    position: absolute;
+    
+    left: 58vw
+  }
+  
+  .navSearch {
+    position: absolute;
+    
+    left: 88vw;
+  }
+  .searchIcon{
+    position:absolute;
+    
+    left: 97vw;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+
+  }
+}
+@media (max-width:500px) {
+  .navbar :is(.navHome,.navEvents,.navMember,.navNews,.navSearch,.searchIcon){
+    font-size: 9px;
+    
+  
+  }
+  .navbar{
+    height: 40px;
+  }
+  .logo{ position:absolute;
+    height:20px ;
+    top: 22%;
+  }
+  .navHome {
+    position: absolute;
+    
+    left: 12vw;
+  }
+  
+  .navEvents {
+    position: absolute;
+    
+    left: 22vw;
+    
+  }
+  
+  .navNews {
+    position: absolute;
+    
+    left: 33vw;
+  }
+  
+  .navMember {
+    position: absolute;
+    
+    left: 56vw
+  }
+  
+  .navSearch {
+    position: absolute;
+    
+    left: 88vw;
+  }
+  .searchIcon{
+    position:absolute;
+    
+    left: 97vw;
+  }
+  .logo{
+    position: absolute;
+    left: 0%;
+
   }
 }
